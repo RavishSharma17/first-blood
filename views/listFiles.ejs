@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">Home</a>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    List of uploaded Files
+    <div style="display: flex;flex-direction: column;padding: 50px;" >
+        <% for(let i in files) { %>
+            <a href=<%- `"/static/${files[i]}"` %>><%= files[i] %></a>
+        <% } %>
+    </div>
+    
+</body>
+</html>
